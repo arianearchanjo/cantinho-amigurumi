@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeria — Cantinho do Amigurumi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Caveat:wght@500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500;1,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+
+    <header>
+        <!-- MARQUEE TOPO -->
+        <div class="topbar-marquee">
+            <div class="marquee-track">
+                <span>Feito à mão com amor</span>
+                <span class="dot">·</span>
+                <span>Encomendas abertas</span>
+                <span class="dot">·</span>
+                <span>Frete para todo o Brasil</span>
+                <span class="dot">·</span>
+                <span>Personagens sob medida</span>
+                <span class="dot">·</span>
+                <span>Heróis, animais e muito mais</span>
+                <span class="dot">·</span>
+                <span>Feito à mão com amor</span>
+                <span class="dot">·</span>
+                <span>Encomendas abertas</span>
+                <span class="dot">·</span>
+                <span>Frete para todo o Brasil</span>
+                <span class="dot">·</span>
+                <span>Personagens sob medida</span>
+                <span class="dot">·</span>
+                <span>Heróis, animais e muito mais</span>
+                <span class="dot">·</span>
+            </div>
+        </div>
+
+        <!-- NAVBAR -->
+        <nav class="site-nav" id="mainNav">
+            <div class="nav-inner">
+                <div class="nav-left">
+                    <a href="produtos.html" class="nav-link-item">Produtos</a>
+                    <a href="sobre.html" class="nav-link-item">Sobre</a>
+                </div>
+                <a href="../index.html" class="nav-brand">
+                    <img src="../assets/img/logo.png" alt="Cantinho do Amigurumi" class="nav-logo" />
+                    <span class="nav-brand-text">Cantinho do Amigurumi</span>
+                </a>
+                <div class="nav-right">
+                    <a href="galeria.html" class="nav-link-item nav-active">Galeria</a>
+                    <a href="https://wa.me/5541997392226" target="_blank" class="nav-cta">Encomendar</a>
+                </div>
+                <button class="nav-hamburger" id="menuToggle">
+                    <span></span><span></span>
+                </button>
+            </div>
+            <div class="nav-mobile" id="navMobile">
+                <a href="produtos.html">Produtos</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="../index.html#processo">Processo</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="https://wa.me/5541997392226" target="_blank">Encomendar via WhatsApp →</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO DA PÁGINA -->
+        <section class="gal-page-hero">
+            <span class="gal-page-eyebrow">Do ateliê · Campina Grande do Sul, PR</span>
+            <h1 class="gal-page-title">Cada peça tem<br><em>uma história.</em></h1>
+            <p class="gal-page-sub">
+                Amigurumis e artes em biscuit feitos ponto a ponto, com afeto.<br>
+                Clique em qualquer criação para ver de pertinho.
+            </p>
+            <a href="https://www.instagram.com/cantinhodoamigurumi.atelie/" target="_blank" class="gal-page-ig-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                Ver no Instagram
+            </a>
+        </section>
+
+        <!-- FILTROS -->
+        <nav class="gal-filters">
+            <div class="gal-filters-inner">
+                <span class="gal-filter-label">Filtrar:</span>
+                <button class="gal-filter-btn active" data-filter="todos"><i data-lucide="layout-grid"></i> Todos</button>
+                <button class="gal-filter-btn" data-filter="animais"><i data-lucide="paw-print"></i> Animais</button>
+                <button class="gal-filter-btn" data-filter="coelhos"><i data-lucide="rabbit"></i> Coelhinhos</button>
+                <button class="gal-filter-btn" data-filter="herois"><i data-lucide="shield"></i> Heróis</button>
+                <button class="gal-filter-btn" data-filter="celebridades"><i data-lucide="mic-2"></i> Celebridades</button>
+                <button class="gal-filter-btn" data-filter="marinhos"><i data-lucide="waves"></i> Marinhos</button>
+                <button class="gal-filter-btn" data-filter="biscuit"><i data-lucide="sparkles"></i> Biscuit</button>
+                <button class="gal-filter-btn" data-filter="especiais"><i data-lucide="star"></i> Especiais</button>
+            </div>
+        </nav>
+
+        <!-- GRID MASONRY -->
+        <section class="gal-main-section">
+            <div class="gal-main-inner">
+                <div class="gal-masonry" id="galMasonry">
+
+                    <!-- AMIGURUMI -->
+                    <article class="gal-brick reveal" data-cat="animais" data-label="Ursinho Clássico" data-src="../assets/img/ursinho.jpeg">
+                        <img src="../assets/img/ursinho.jpeg" alt="Ursinho Clássico" loading="lazy" />
+                        <div class="gal-brick-overlay">
+                            <div>
+                                <span class="gal-brick-tag">Animais</span>
+                                <p class="gal-brick-label">Ursinho Clássico</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="gal-brick reveal" data-cat="coelhos" data-label="Coelhinho Rosa" data-src="../assets/img/coelhinho-rosa.jpeg">
+                        <img src="../assets/img/coelhinho-rosa.jpeg" alt="Coelhinho Rosa" loading="lazy" />
+                        <div class="gal-brick-overlay">
+                            <div>
+                                <span class="gal-brick-tag">Coelhinhos</span>
+                                <p class="gal-brick-label">Coelhinho Rosa</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="gal-brick reveal" data-cat="animais" data-label="Ursinho Pardo" data-src="../assets/img/ursinho-pardo.jpeg">
+                        <img src="../assets/img/ursinho-pardo.jpeg" alt="Ursinho Pardo" loading="lazy" />
+                        <div class="gal-brick-overlay">
+                            <div>
+                                <span class="gal-brick-tag">Animais</span>
+                                <p class="gal-brick-label">Ursinho Pardo</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="gal-brick reveal" data-cat="animais" data-label="Ursinho Rosa Pequeno" data-src="../assets/img/ursinho-rosa.jpeg">
+                        <img src="../assets/img/ursinho-rosa.jpeg" alt="Ursinho Rosa Pequeno" loading="lazy" />
+                        <div class="gal-brick-overlay">
+                            <div>
+                                <span class="gal-brick-tag">Animais</span>
+                                <p class="gal-brick-label">Ursinho Rosa Pequeno</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="gal-brick reveal" data-cat="marinhos" data-label="Polvo Terapêutico" data-src="../assets/img/polvo.jpeg">
+                        <img src="../assets/img/polvo.jpeg" alt="Polvo Terapêutico" loading="lazy" />
+                        <div class="gal-brick-overlay">
+                            <div>
+                                <span class="gal-brick-tag">Marinhos</span>
+                                <p class="gal-brick-label">Polvo Terapêutico</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="gal-brick reveal" data-cat="herois" data-label="Homem Aranha" data-src="../assets/img/homem-aranha.jpeg">
+                        <img src="../assets/img/homem-aranha.jpeg" alt="Homem Aranha" loading="lazy" />
+                        <div class="gal-brick-overlay">
+                            <div>
+                                <span class="gal-brick-tag">Heróis</span>
+                                <p class="gal-brick-label">Homem Aranha</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="gal-brick reveal" data-cat="animais" data-label="Coruja Harry Potter" data-src="../assets/img/coruja.jpeg">
+                        <img src="../assets/img/coruja.jpeg" alt="Coruja Harry Potter" loading="lazy" />
+                        <div class="gal-brick-overlay">
+                            <div>
+                                <span class="gal-brick-tag">Celebridades</span>
+                                <p class="gal-brick-label">Coruja Harry Potter</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="gal-brick reveal" data-cat="celebridades" data-label="Amy Winehouse" data-src="../assets/img/amy.jpeg">
+                        <img src="../assets/img/amy.jpeg" alt="Amy Winehouse" loading="lazy" />
+                        <div class="gal-brick-overlay">
+                            <div>
+                                <span class="gal-brick-tag">Celebridades</span>
+                                <p class="gal-brick-label">Amy Winehouse</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="gal-brick reveal" data-cat="celebridades" data-label="Jungkook" data-src="../assets/img/jungkook.jpeg">
+                        <img src="../assets/img/jungkook.jpeg" alt="Jungkook" loading="lazy" />
+                        <div class="gal-brick-overlay">
+                            <div>
+                                <span class="gal-brick-tag">Celebridades</span>
+                                <p class="gal-brick-label">Jungkook</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="gal-brick reveal" data-cat="coelhos" data-label="Coelho de Neve" data-src="../assets/img/coelho-branco.jpeg">
+                        <img src="../assets/img/coelho-branco.jpeg" alt="Coelho de Neve" loading="lazy" />
+                        <div class="gal-brick-overlay">
+                            <div>
+                                <span class="gal-brick-tag">Coelhinhos</span>
+                                <p class="gal-brick-label">Coelho de Neve</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="gal-brick reveal" data-cat="animais" data-label="Macaquinho" data-src="../assets/img/macaquinho.jpeg">
+                        <img src="../assets/img/macaquinho.jpeg" alt="Macaquinho" loading="lazy" />
+                        <div class="gal-brick-overlay">
+                            <div>
+                                <span class="gal-brick-tag">Animais</span>
+                                <p class="gal-brick-label">Macaquinho</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="gal-brick reveal" data-cat="especiais" data-label="Papai Noel" data-src="../assets/img/papai-noel.jpeg">
+                        <img src="../assets/img/papai-noel.jpeg" alt="Papai Noel" loading="lazy" />
+                        <div class="gal-brick-overlay">
+                            <div>
+                                <span class="gal-brick-tag">Especiais</span>
+                                <p class="gal-brick-label">Papai Noel</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="gal-brick reveal" data-cat="marinhos" data-label="Tubarão Baleia" data-src="../assets/img/tubarao-baleia.jpeg">
+                        <img src="../assets/img/tubarao-baleia.jpeg" alt="Tubarão Baleia" loading="lazy" />
+                        <div class="gal-brick-overlay">
+                            <div>
+                                <span class="gal-brick-tag">Marinhos</span>
+                                <p class="gal-brick-label">Tubarão Baleia</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="gal-brick reveal" data-cat="herois" data-label="Mini Spider" data-src="../assets/img/homem-aranha-pequeno.jpeg">
+                        <img src="../assets/img/homem-aranha-pequeno.jpeg" alt="Mini Spider" loading="lazy" />
+                        <div class="gal-brick-overlay">
+                            <div>
+                                <span class="gal-brick-tag">Heróis</span>
+                                <p class="gal-brick-label">Mini Spider</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="gal-brick reveal" data-cat="coelhos" data-label="Coelho Cinza" data-src="../assets/img/coelho-cinza.jpeg">
+                        <img src="../assets/img/coelho-cinza.jpeg" alt="Coelho Cinza" loading="lazy" />
+                        <div class="gal-brick-overlay">
+                            <div>
+                                <span class="gal-brick-tag">Coelhinhos</span>
+                                <p class="gal-brick-label">Coelho Cinza</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="gal-brick reveal" data-cat="animais" data-label="Dinossauro" data-src="../assets/img/dinossauro.jpeg">
+                        <img src="../assets/img/dinossauro.jpeg" alt="Dinossauro" loading="lazy" />
+                        <div class="gal-brick-overlay">
+                            <div>
+                                <span class="gal-brick-tag">Animais</span>
+                                <p class="gal-brick-label">Dinossauro</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="gal-brick reveal" data-cat="animais" data-label="Dinossauro Verde" data-src="../assets/img/dinossauro-verde.jpeg">
+                        <img src="../assets/img/dinossauro-verde.jpeg" alt="Dinossauro Verde" loading="lazy" />
+                        <div class="gal-brick-overlay">
+                            <div>
+                                <span class="gal-brick-tag">Animais</span>
+                                <p class="gal-brick-label">Dinossauro Verde</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="gal-brick reveal" data-cat="especiais" data-label="Anjinhos" data-src="../assets/img/anjinhos.jpeg">
+                        <img src="../assets/img/anjinhos.jpeg" alt="Anjinhos" loading="lazy" />
+                        <div class="gal-brick-overlay">
+                            <div>
+                                <span class="gal-brick-tag">Especiais</span>
+                                <p class="gal-brick-label">Anjinhos</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="gal-brick reveal" data-cat="marinhos" data-label="Polvinhos" data-src="../assets/img/polvinhos.jpeg">
+                        <img src="../assets/img/polvinhos.jpeg" alt="Polvinhos" loading="lazy" />
+                        <div class="gal-brick-overlay">
+                            <div>
+                                <span class="gal-brick-tag">Marinhos</span>
+                                <p class="gal-brick-label">Polvinhos</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- BISCUIT -->
+                    <article class="gal-brick reveal" data-cat="biscuit" data-label="Will Stranger Things" data-src="../assets/img/will-st-biscuit.jpeg">
+                        <img src="../assets/img/will-st-biscuit.jpeg" alt="Will Stranger Things" loading="lazy" />
+                        <div class="gal-brick-overlay">
+                            <div>
+                                <span class="gal-brick-tag">Biscuit</span>
+                                <p class="gal-brick-label">Will Stranger Things</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="gal-brick reveal" data-cat="biscuit" data-label="Carl TWD" data-src="../assets/img/carl-twd-biscuit.jpeg">
+                        <img src="../assets/img/carl-twd-biscuit.jpeg" alt="Carl TWD" loading="lazy" />
+                        <div class="gal-brick-overlay">
+                            <div>
+                                <span class="gal-brick-tag">Biscuit</span>
+                                <p class="gal-brick-label">Carl TWD</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="gal-brick reveal" data-cat="biscuit" data-label="Rony Harry Potter" data-src="../assets/img/rony-biscuit.jpeg">
+                        <img src="../assets/img/rony-biscuit.jpeg" alt="Rony Harry Potter" loading="lazy" />
+                        <div class="gal-brick-overlay">
+                            <div>
+                                <span class="gal-brick-tag">Biscuit</span>
+                                <p class="gal-brick-label">Rony Harry Potter</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="gal-brick reveal" data-cat="biscuit" data-label="Yasuo LoL" data-src="../assets/img/yasuo-lol-biscuit.jpeg">
+                        <img src="../assets/img/yasuo-lol-biscuit.jpeg" alt="Yasuo LoL" loading="lazy" />
+                        <div class="gal-brick-overlay">
+                            <div>
+                                <span class="gal-brick-tag">Biscuit</span>
+                                <p class="gal-brick-label">Yasuo LoL</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="gal-brick reveal" data-cat="biscuit" data-label="Encomenda Especial" data-src="../assets/img/personalizado-biscuit.jpeg">
+                        <img src="../assets/img/personalizado-biscuit.jpeg" alt="Encomenda Especial" loading="lazy" />
+                        <div class="gal-brick-overlay">
+                            <div>
+                                <span class="gal-brick-tag">Biscuit</span>
+                                <p class="gal-brick-label">Encomenda Especial</p>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA FINAL -->
+        <section class="gal-cta-strip">
+            <h2>Gostou de algum?</h2>
+            <p>Mande uma mensagem e encomende o seu hoje mesmo.</p>
+            <a href="https://wa.me/5541997392226?text=Olá! Vi sua galeria e gostei muito das suas artes ✨" target="_blank" class="btn-wa-cta">
+                <i data-lucide="sparkles"></i>
+                Conversar no WhatsApp
+            </a>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="../assets/img/logo.png" alt="Logo" class="footer-logo" />
+                <p>Ateliê de artes artesanais<br>feito com amor em Campina Grande do Sul, PR.</p>
+                <div class="footer-socials">
+                    <a href="https://www.instagram.com/cantinhodoamigurumi.atelie/" target="_blank">Instagram</a>
+                    <a href="https://wa.me/5541997392226" target="_blank">WhatsApp</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Coleções</h4>
+                <a href="produtos.html#animais">Animais</a>
+                <a href="produtos.html#coelhos">Coelhinhos</a>
+                <a href="produtos.html#herois">Heróis</a>
+                <a href="produtos.html#marinhos">Do Mar</a>
+                <a href="produtos.html#especiais">Especiais</a>
+            </div>
+            <div class="footer-col">
+                <h4>Atendimento</h4>
+                <a href="https://wa.me/5541997392226" target="_blank">Fazer pedido</a>
+                <a href="https://wa.me/5541997392226" target="_blank">Personalizado</a>
+                <a href="https://wa.me/5541997392226" target="_blank">Dúvidas</a>
+                <a href="https://wa.me/5541997392226" target="_blank">Prazos e entrega</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Cantinho do Amigurumi · Todos os direitos reservados</p>
+            <p>Artesanato feito com carinho em Campina Grande do Sul, PR</p>
+        </div>
+    </footer>
+
+    <!-- LIGHTBOX -->
+    <div class="gal-lightbox" id="lightbox">
+        <button class="gal-lightbox-close" id="lightboxClose" aria-label="Fechar">&times;</button>
+        <button class="gal-lightbox-nav gal-lightbox-prev" id="lightboxPrev" aria-label="Anterior">&#10094;</button>
+        <img src="" alt="" class="gal-lightbox-img" id="lightboxImg" />
+        <button class="gal-lightbox-nav gal-lightbox-next" id="lightboxNext" aria-label="Próximo">&#10095;</button>
+        <div class="gal-lightbox-caption">
+            <span id="lightboxCaption"></span>
+        </div>
+    </div>
+
+    <!-- FLOAT WA -->
+    <a href="https://wa.me/5541997392226" target="_blank" class="wa-float" aria-label="WhatsApp">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
