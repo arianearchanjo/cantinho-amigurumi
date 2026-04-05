@@ -1,5 +1,5 @@
 /* =============================================
-   CANTINHO DO AMIGURUMI — styles.css v2
+   CANTINHO DO AMIGURUMI — styles.css v3
    Design: Ateliê editorial · aconchegante
    Inspiração: Wolf & Badger, Etsy premium, 
    ateliers europeus de crochê
@@ -1815,27 +1815,20 @@ body::after {
 }
 
 /* =============================================
-   RESPONSIVE (Mobile Optmizations)
-   ============================================= */
-
-/* bloco mobile — ver final do arquivo */
-
-
-/* =============================================
    PRODUTOS — LAYOUT REDESENHADO
    ============================================= */
 
 /* ── Navegação por categoria ── */
 .pcat-nav {
-  position: relative !important; /* Ocupa espaço real no fluxo do documento */
+  position: relative !important;
   display: block !important;
   width: 100%;
   z-index: 90;
   background: var(--creme-lt);
   border-bottom: 1px solid var(--border);
-  margin-bottom: 50px !important; /* Margem de segurança obrigatória */
+  margin-bottom: 50px !important;
   box-shadow: 0 4px 12px rgba(46, 27, 18, 0.03);
-  clear: both; /* Limpeza de floats */
+  clear: both;
 }
 
 .pcat-inner {
@@ -1890,7 +1883,7 @@ body::after {
   padding: 40px 0 80px !important;
   background: var(--creme-lt);
   position: relative;
-  margin-top: 0 !important; /* Garantir que não haja margem negativa */
+  margin-top: 0 !important;
   scroll-margin-top: 20px;
 }
 
@@ -2134,51 +2127,12 @@ body::after {
   box-shadow: 0 6px 18px rgba(37,211,102,0.3);
 }
 
-/* ── Responsivo ── */
-@media (max-width: 1024px) {
-  .pcat-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
-  .pcat-header-desc { text-align: left; max-width: 100%; }
-  .pcat-header { flex-direction: column; align-items: flex-start; gap: 16px; }
+/* Tag for plush items */
+.pcard-tag-plush {
+  background: #9AB5A0;
+  color: #fff;
 }
 
-@media (max-width: 600px) {
-  .pcat-grid { grid-template-columns: 1fr; gap: 16px; }
-  .pcat-section { padding: 48px 0 56px; }
-  .pcat-inner { padding: 0 16px; }
-  .pcat-btn { padding: 14px 16px; font-size: 0.75rem; }
-}
-
-@media (max-width: 1024px) {
-  .hero {
-    grid-template-columns: 1fr 1fr;
-  }
-  .hero-text-col {
-    padding: 60px 32px 60px 40px;
-  }
-  .hero-img-col {
-    padding: 40px 32px 40px 0;
-    height: calc(100vh - 98px);
-  }
-  .hero-main-img {
-    max-width: 100%;
-    aspect-ratio: 4 / 5;
-  }
-  .products-atelier-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 18px;
-  }
-  .home-teaser-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-  }
-  .presentes-wrapper { grid-template-columns: 1fr; gap: 48px; }
-  .presentes-visual-col { height: 300px; }
-  .dep-grid { grid-template-columns: 1fr; gap: 16px; }
-  .footer-content { grid-template-columns: 1fr 1fr; gap: 40px; }
-  .footer-brand { grid-column: 1 / -1; }
-}
-
-/* bloco mobile — ver final do arquivo */
 /* =============================================
    GALERIA PAGE EXTRAS
    ============================================= */
@@ -2331,10 +2285,6 @@ body::after {
   columns: 4;
   column-gap: 16px;
 }
-
-@media (max-width: 1024px) { .gal-masonry { columns: 3; } }
-@media (max-width: 768px)  { .gal-masonry { columns: 2; } }
-@media (max-width: 480px)  { .gal-masonry { columns: 1; } }
 
 .gal-brick {
   break-inside: avoid;
@@ -2628,9 +2578,6 @@ body::after {
   animation: fade-up 0.55s ease 0.25s forwards;
 }
 
-/* prod-page-hero mobile — ver final do arquivo */
-
-
 /* =============================================
    ICON STYLING (LUCIDE)
    ============================================= */
@@ -2644,7 +2591,6 @@ body::after {
   color: inherit;
 }
 
-/* Specific adjustments */
 .pcat-btn .lucide,
 .gal-filter-btn .lucide {
   width: 1rem;
@@ -2659,21 +2605,13 @@ body::after {
 }
 
 
-/* Tag for plush items */
-.pcard-tag-plush {
-  background: #9AB5A0;
-  color: #fff;
-}
-
-
 /* =============================================
-   SE��O CONHE�A A ARTES�
+   SEÇÃO CONHEÇA A ARTESÃ
    ============================================= */
 .artesa-section {
-  padding: 80px 0 80px; /* Reduzi o topo para 40px */
+  padding: 80px 0 80px;
   background: #fff;
   position: relative;
-  /* Removi o min-height e o flex center para a seção subir */
 }
 
 .artesa-grid {
@@ -2682,14 +2620,14 @@ body::after {
   display: grid;
   grid-template-columns: 420px 1fr;
   gap: 60px;
-  align-items: flex-start; /* Garante que o topo da imagem e do texto fiquem alinhados */
+  align-items: flex-start;
   padding: 0 32px;
 }
 
 .artesa-img-col {
   position: relative;
   width: 100%;
-  max-width: 420px; /* Limits the photo size */
+  max-width: 420px;
 }
 
 .artesa-img-frame {
@@ -2714,7 +2652,6 @@ body::after {
   transform: scale(1.05);
 }
 
-/* Elemento decorativo atr�s da foto */
 .artesa-img-col::before {
   content: '';
   position: absolute;
@@ -2759,7 +2696,6 @@ body::after {
   margin-bottom: 20px;
 }
 
-/* �cones das Artes */
 .artesa-skills {
   display: flex;
   gap: 32px;
@@ -2800,17 +2736,8 @@ body::after {
   color: var(--ink-mid);
 }
 
-@media (max-width: 992px) {
-  .artesa-grid { grid-template-columns: 1fr; gap: 48px; text-align: center; }
-  .artesa-img-col { max-width: 400px; margin: 0 auto; }
-  .artesa-text-col { padding-right: 0; }
-  .artesa-skills { justify-content: center; }
-  .artesa-skill-item { align-items: center; }
-}
-
-
 /* =============================================
-   SE��O PORTF�LIO BISCUIT
+   SEÇÃO PORTFÓLIO BISCUIT
    ============================================= */
 .biscuit-section {
   padding: 80px 0;
@@ -2855,7 +2782,6 @@ body::after {
   object-fit: cover;
 }
 
-/* Intera��o solicitada: rota��o e borda marrom rosado */
 .biscuit-card:hover .biscuit-img-wrapper {
   transform: rotate(2deg) scale(1.02);
   border-color: var(--rosa);
@@ -2870,113 +2796,168 @@ body::after {
   letter-spacing: 0.02em;
 }
 
-@media (max-width: 1024px) {
-  .biscuit-grid { grid-template-columns: repeat(3, 1fr); }
-}
 
-@media (max-width: 600px) {
-  .biscuit-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
-  .biscuit-section { padding: 60px 0; }
+/* =============================================
+   BREAKPOINT TABLET (1024px)
+   ============================================= */
+@media (max-width: 1024px) {
+  .hero {
+    grid-template-columns: 1fr 1fr;
+  }
+  .hero-text-col {
+    padding: 60px 32px 60px 40px;
+  }
+  .hero-img-col {
+    padding: 40px 32px 40px 0;
+    height: calc(100vh - 98px);
+  }
+  .hero-main-img {
+    max-width: 100%;
+    aspect-ratio: 4 / 5;
+  }
+  .products-atelier-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+  .home-teaser-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  .presentes-wrapper { grid-template-columns: 1fr; gap: 48px; }
+  .presentes-visual-col { height: 300px; }
+  .dep-grid { grid-template-columns: 1fr; gap: 16px; }
+  .footer-content { grid-template-columns: 1fr 1fr; gap: 40px; }
+  .footer-brand { grid-column: 1 / -1; }
+  .pcat-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .pcat-header-desc { text-align: left; max-width: 100%; }
+  .pcat-header { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .artesa-grid { grid-template-columns: 1fr; gap: 48px; text-align: center; }
+  .artesa-img-col { max-width: 400px; margin: 0 auto; }
+  .artesa-text-col { padding-right: 0; }
+  .artesa-skills { justify-content: center; }
+  .artesa-skill-item { align-items: center; }
+  .biscuit-grid { grid-template-columns: repeat(3, 1fr); }
+  .gal-masonry { columns: 3; }
 }
 
 
 /* =============================================
-   MOBILE — BLOCO ÚNICO
-   Filosofia: preservar a elegância do desktop.
-   Tipografia expressiva, espaços generosos,
-   imagem de impacto. Não reduzir — adaptar.
+   MOBILE — REFATORAÇÃO COMPLETA v3
+   Filosofia: adaptar com elegância, não simplificar.
+   Cada elemento preserva a identidade visual do
+   desktop — tipografia expressiva, proporções
+   cuidadas, espaçamento generoso.
    ============================================= */
 
 @media (max-width: 768px) {
 
-  /* ── NAVBAR ──────────────────────────────────── */
-  .nav-left, .nav-right  { display: none; }
-  .nav-hamburger         { display: flex; }
-  .nav-inner             { padding: 0 20px; height: 60px; }
-  .nav-brand-text        { font-size: 0.88rem; }
-  .nav-mobile a          { padding: 16px 24px; min-height: 48px; display: flex; align-items: center; }
+  /* ── NAVBAR ── */
+  .nav-left, .nav-right { display: none; }
+  .nav-hamburger { display: flex; }
+  .nav-inner { padding: 0 20px; height: 60px; }
+  .nav-brand-text { font-size: 0.88rem; }
+  .nav-mobile a {
+    padding: 16px 24px;
+    min-height: 52px;
+    display: flex;
+    align-items: center;
+    font-size: 0.92rem;
+  }
 
-  /* ── HERO — o coração do site ────────────────── */
+  /* ── HERO ── */
+  /* Layout: imagem empilhada sobre o texto */
   .hero {
     grid-template-columns: 1fr;
     min-height: auto;
-    padding-top: 0;
+    background: var(--creme);
   }
 
-  /* Imagem em destaque no topo — ocupa toda a largura, impactante */
+  /* Imagem: ocupa 100% da largura, com proporção 4:5 elegante */
   .hero-img-col {
     order: 1;
     height: auto;
     min-height: unset;
-    padding: 0;           /* sem padding: imagem de borda a borda */
+    padding: 0;
   }
 
   .hero-main-img {
     width: 100%;
     max-width: 100%;
-    aspect-ratio: 1 / 1;  /* quadrado: mostra o amigurumi bonito, sem cortar */
-    border-radius: 0;      /* sem borda arredondada: vai de ponta a ponta */
+    /* Proporção 4:5 mantém a verticalidade da foto sem parecer esticada */
+    aspect-ratio: 4 / 5;
+    border-radius: 0 0 40px 40px; /* arredondamento só embaixo — integra com o texto */
+    box-shadow: 0 16px 40px rgba(46, 27, 18, 0.12);
   }
 
-  /* Ícone de coração reposicionado para não sumir */
+  /* Coração reposicionado para ficar visível */
   .hero-icon-heart {
-    top: 16px;
-    right: 16px;
-    font-size: 1.4rem;
+    top: 18px;
+    right: 18px;
+    font-size: 1.6rem;
   }
 
-  /* Texto com espaçamento editorial generoso */
+  /* Coluna de texto: espaçamento editorial generoso */
   .hero-text-col {
     order: 2;
-    padding: 40px 24px 52px;
+    padding: 44px 24px 56px;
+    gap: 0;
     text-align: left;
     align-items: flex-start;
-    gap: 0;
   }
 
-  /* Eyebrow: manter elegância */
+  /* Eyebrow: mantém elegância, tamanho ajustado */
   .hero-eyebrow {
-    font-size: 0.68rem;
-    margin-bottom: 20px;
+    font-size: 0.67rem;
+    margin-bottom: 22px;
+    letter-spacing: 0.12em;
   }
 
-  /* Tipografia grande — a chave da beleza do desktop */
-  /* Usamos valores fixos generosos que cabem em 375px+ */
-  .hero-hl-em    { font-size: 3.2rem; }   /* "Carinho" — grande e italic */
-  .hero-hl-plain { font-size: 2.7rem; }   /* "em cada" */
-  .hero-hl-accent { font-size: 2.2rem; }  /* "pontinho." */
+  /* Tipografia do headline: generosa e expressiva */
+  /* Valores fixos em rem garantem legibilidade em 360px+ */
+  .hero-hl-em    { font-size: 3.4rem; line-height: 0.95; }
+  .hero-hl-plain { font-size: 2.85rem; line-height: 0.98; }
+  .hero-hl-accent { font-size: 2.3rem; line-height: 1.0; }
 
-  .hero-headline { margin-bottom: 24px; }
+  .hero-headline {
+    gap: 4px; /* pequeno espaçamento entre linhas do headline */
+    margin-bottom: 26px;
+  }
 
+  /* Corpo: respiração adequada, linha longa confortável */
   .hero-body {
     font-size: 0.95rem;
     max-width: 100%;
     margin-bottom: 32px;
-    line-height: 1.75;
+    line-height: 1.8;
   }
 
-  /* Botões lado a lado no mobile */
+  /* Botões: um ao lado do outro quando cabem, empilham se necessário */
   .hero-actions {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 12px;
     margin-bottom: 0;
+    width: 100%;
   }
 
+  /* Botões hero: mesmo tamanho, altura e padding idênticos */
   .btn-hero-primary,
   .btn-hero-ghost {
-    min-height: 48px;
-    font-size: 0.82rem;
-    padding: 13px 24px;
+    flex: 1;
+    min-width: 0;
+    justify-content: center;
+    height: 52px;
+    font-size: 0.83rem;
+    padding: 0 20px;
+    box-sizing: border-box;
   }
 
-  /* ── GRIDS ───────────────────────────────────── */
+  /* ── CONTAINER GERAL ── */
+  .container { padding-left: 20px; padding-right: 20px; }
+
+  /* ── GRIDS DE PRODUTOS / TEASER ── */
+  /* 2 colunas mantém a grade interessante sem ficar apertado */
   .products-atelier-grid {
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: 14px !important;
-  }
-
-  .pcat-grid {
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 14px !important;
   }
@@ -2986,20 +2967,73 @@ body::after {
     gap: 14px !important;
   }
 
-  .home-teaser-header { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .home-teaser-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 32px;
+  }
 
-  /* ── MENUS DE CATEGORIAS: scroll horizontal ──── */
-  .category-strip        { overflow-x: auto; -webkit-overflow-scrolling: touch; }
-  .category-list         { overflow-x: auto !important; white-space: nowrap !important; flex-wrap: nowrap !important; -webkit-overflow-scrolling: touch; }
-  .cat-item              { display: inline-flex !important; flex-shrink: 0; white-space: nowrap; padding: 14px 18px; min-height: 48px; }
+  /* Cards de produto: reduz padding interno levemente */
+  .pcard-body { padding: 16px 18px 20px; gap: 8px; }
+  .pcard-name { font-size: 1.05rem; }
+  .pcard-desc { font-size: 0.8rem; }
+  .pcard-price { font-size: 1.3rem; }
 
-  .pcat-inner            { overflow-x: auto !important; white-space: nowrap !important; flex-wrap: nowrap !important; padding: 0 20px !important; -webkit-overflow-scrolling: touch; }
-  .pcat-btn              { display: inline-flex !important; flex-shrink: 0; white-space: nowrap; padding: 16px 18px; font-size: 0.8rem; min-height: 48px; }
+  /* ── GRID DE PRODUTOS NA PÁGINA PRODUTOS ── */
+  .pcat-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 14px !important;
+  }
 
-  .gal-filter-bar        { overflow-x: auto; -webkit-overflow-scrolling: touch; flex-wrap: nowrap !important; justify-content: flex-start; }
-  .gal-filter-btn        { flex-shrink: 0; white-space: nowrap; min-height: 44px; }
+  /* ── MENUS DE CATEGORIA: scroll horizontal suave ── */
+  .category-strip { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .category-list {
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+    flex-wrap: nowrap !important;
+    -webkit-overflow-scrolling: touch;
+  }
+  .cat-item {
+    display: inline-flex !important;
+    flex-shrink: 0;
+    white-space: nowrap;
+    padding: 14px 18px;
+    min-height: 52px;
+  }
 
-  /* ── BOTÕES — área de toque ──────────────────── */
+  .pcat-inner {
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+    flex-wrap: nowrap !important;
+    padding: 0 20px !important;
+    -webkit-overflow-scrolling: touch;
+  }
+  .pcat-btn {
+    display: inline-flex !important;
+    align-items: center;
+    flex-shrink: 0;
+    white-space: nowrap;
+    padding: 16px 18px;
+    font-size: 0.78rem;
+    min-height: 52px;
+  }
+
+  .gal-filters-inner {
+    overflow-x: auto;
+    flex-wrap: nowrap !important;
+    justify-content: flex-start;
+    -webkit-overflow-scrolling: touch;
+    padding: 0 20px;
+  }
+  .gal-filter-btn {
+    flex-shrink: 0;
+    white-space: nowrap;
+    min-height: 44px;
+  }
+  .gal-filter-label { display: none; } /* remove label para ganhar espaço horizontal */
+
+  /* ── BOTÕES: área de toque mínima 48px ── */
   .btn-wa-cta,
   .btn-atelier,
   .nav-cta,
@@ -3011,79 +3045,206 @@ body::after {
     justify-content: center !important;
   }
 
-  /* ── SEÇÕES — espaçamento proporcional ───────── */
-  .container             { padding-left: 20px; padding-right: 20px; }
-  .products-section      { padding: 56px 0 72px; }
-  .home-teaser-section   { padding: 56px 0 64px; }
-  .processo-section      { padding: 56px 0 72px; }
-  .presentes-section     { padding: 56px 0 72px; }
-  .cta-section           { padding: 64px 0; }
-  .artesa-section        { padding: 56px 0; }
+  /* ── SEÇÕES: espaçamento proporcionado ── */
+  .products-section    { padding: 56px 0 72px; }
+  .home-teaser-section { padding: 56px 0 64px; }
+  .processo-section    { padding: 56px 0 72px; }
+  .presentes-section   { padding: 56px 0 72px; }
+  .cta-section         { padding: 64px 0; }
+  .artesa-section      { padding: 56px 0; }
+  .biscuit-section     { padding: 56px 0; }
+  .galeria-section     { padding: 56px 0 72px; }
+  .dep-section         { padding: 56px 0 72px; }
+  .editorial-section   { padding: 56px 0; }
+  .gal-main-section    { padding: 32px 0 72px; }
 
-  /* ── CABEÇALHOS ──────────────────────────────── */
-  .section-heading       { font-size: 2rem !important; }
-  .pcat-title            { font-size: 1.9rem !important; }
-  .presentes-h2          { font-size: 1.9rem !important; }
-  .cta-heading           { font-size: 2rem !important; }
-  .artesa-title          { font-size: 1.9rem !important; }
-  .prod-page-title       { font-size: 1.9rem !important; }
-  .gal-page-title        { font-size: 1.9rem !important; }
+  /* ── CABEÇALHOS: clamp preserva a expressividade ── */
+  .section-heading  { font-size: clamp(1.75rem, 6.5vw, 2.2rem) !important; line-height: 1.1; }
+  .pcat-title       { font-size: clamp(1.7rem, 6vw, 2.1rem) !important; line-height: 1.1; }
+  .presentes-h2     { font-size: clamp(1.7rem, 6vw, 2.1rem) !important; line-height: 1.15; }
+  .cta-heading      { font-size: clamp(1.75rem, 6.5vw, 2.2rem) !important; line-height: 1.1; }
+  .artesa-title     { font-size: clamp(1.75rem, 6.5vw, 2.2rem) !important; }
+  .prod-page-title  { font-size: clamp(1.9rem, 7vw, 2.4rem) !important; }
+  .gal-page-title   { font-size: clamp(2rem, 8vw, 2.8rem) !important; }
 
-  .section-header-split  { flex-direction: column; align-items: flex-start; gap: 14px; }
-  .section-split-desc    { text-align: left; max-width: 100%; }
-  .pcat-header           { flex-direction: column; align-items: flex-start; gap: 14px; }
-  .pcat-header-desc      { text-align: left; max-width: 100%; }
+  .section-header-split {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+  .section-split-desc { text-align: left; max-width: 100%; }
 
-  /* ── PÁGINA DE PRODUTOS ──────────────────────── */
-  .prod-page-hero        { padding: 48px 20px 36px; }
-  .prod-page-hero-inner  { flex-direction: column; align-items: flex-start; gap: 16px; }
-  .prod-page-desc        { text-align: left; }
+  .pcat-header { flex-direction: column; align-items: flex-start; gap: 14px; margin-bottom: 32px; }
+  .pcat-header-desc { text-align: left; max-width: 100%; }
+  .pcat-section { padding: 40px 0 60px !important; }
 
-  /* ── SEÇÃO ARTESÃ ────────────────────────────── */
-  .artesa-grid           { grid-template-columns: 1fr; gap: 40px; padding: 0 20px; text-align: left; }
-  .artesa-img-col        { max-width: 100%; }
-  .artesa-img-frame      { border-radius: 28px; }
-  .artesa-text-col       { padding-right: 0; }
-  .artesa-skills         { justify-content: flex-start; flex-wrap: wrap; gap: 24px; margin-top: 32px; }
+  /* ── PÁGINA DE PRODUTOS ── */
+  .prod-page-hero { padding: 48px 20px 36px; }
+  .prod-page-hero-inner { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .prod-page-desc { text-align: left; max-width: 100%; }
 
-  /* ── EDITORIAL ───────────────────────────────── */
-  .editorial-inner       { flex-direction: column; gap: 40px; padding: 0 20px; }
-  .editorial-spin-ring   { display: none; }
+  /* ── GALERIA HERO ── */
+  .gal-page-hero { padding: 52px 20px 44px; }
+  .gal-page-sub { font-size: 0.92rem; }
+  .gal-main-inner { padding: 0 16px; }
 
-  /* ── CTA ─────────────────────────────────────── */
-  .cta-inner             { flex-direction: column; align-items: flex-start; gap: 36px; }
+  /* ── SEÇÃO ARTESÃ ── */
+  .artesa-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    padding: 0 20px;
+    text-align: left;
+  }
+  .artesa-img-col {
+    max-width: 100%;
+    /* Remove o pseudo-elemento de borda no mobile para não criar overflow */
+  }
+  .artesa-img-col::before { display: none; }
+  .artesa-img-frame {
+    border-radius: 28px;
+    aspect-ratio: 3 / 4; /* foto da artesã: retrato elegante */
+  }
+  .artesa-text-col { padding-right: 0; }
+  .artesa-quote { font-size: 1.1rem; }
+  .artesa-body { font-size: 0.95rem; }
+  .artesa-skills {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 28px;
+  }
+  .artesa-skill-item { align-items: flex-start; }
 
-  /* ── PROCESSO ────────────────────────────────── */
-  .processo-steps        { flex-direction: column; }
-  .processo-connector    { display: none; }
-  .processo-step         { padding: 28px 22px; }
+  /* ── BISCUIT GRID ── */
+  .biscuit-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 0 20px;
+  }
+  /* Mostra só 4 cards no mobile (esconde o 5º) para grid 2×2 limpo */
+  .biscuit-card:nth-child(5) { display: none; }
 
-  /* ── PRESENTES ───────────────────────────────── */
-  .presentes-wrapper     { grid-template-columns: 1fr; gap: 40px; padding: 0 20px; }
-  .presentes-visual-col  { height: 300px; }
+  /* ── EDITORIAL ── */
+  .editorial-inner {
+    flex-direction: column;
+    gap: 36px;
+    padding: 0 20px;
+    align-items: flex-start;
+  }
+  /* O anel giratório fica menor mas visível — não some */
+  .editorial-section .editorial-spin-ring {
+    width: 160px;
+    height: 160px;
+    align-self: center;
+  }
 
-  /* ── GALERIA ─────────────────────────────────── */
-  .galeria-grid          { grid-template-columns: repeat(2, 1fr); grid-template-rows: auto; }
-  .gal-tall              { grid-row: span 1; }
-  .gal-med               { grid-column: span 1; }
-  .gc1, .gc4             { grid-column: auto; grid-row: auto; }
-  .gc5                   { grid-column: span 2; }
+  /* ── CTA ── */
+  .cta-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+  }
+  .cta-action { width: 100%; }
+  .btn-wa-cta {
+    width: 100%;
+    justify-content: center;
+    padding: 18px 32px;
+    font-size: 0.95rem;
+  }
+  .cta-body { font-size: 0.88rem; }
 
-  /* ── DEPOIMENTOS ─────────────────────────────── */
-  .dep-grid              { gap: 14px; }
-  .dep-card              { padding: 28px 22px; }
+  /* ── PROCESSO ── */
+  .processo-steps { flex-direction: column; gap: 12px; }
+  .processo-connector { display: none; }
+  .processo-step { padding: 28px 24px; border-radius: 20px; }
+  .processo-num { font-size: 2.4rem; }
 
-  /* ── FOOTER ──────────────────────────────────── */
-  .footer-content        { grid-template-columns: 1fr; gap: 36px; padding: 0 20px; }
-  .footer-brand          { grid-column: 1; }
-  .footer-bottom         { flex-direction: column; text-align: center; gap: 8px; padding: 0 20px; }
+  /* ── PRESENTES ── */
+  .presentes-wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 0 20px;
+  }
+  .presentes-h2 br { display: none; }
+
+  /* ── PRESENTES: mantém o efeito de colagem, só reposiciona o polvo ── */
+  .presentes-visual-col { height: 320px; }
+
+  /* Polvo: desce mais para não cobrir o coelhinho */
+  .pv-card-b {
+    bottom: -10px;
+    right: 10px;
+  }
+
+  /* ── GALERIA MASONRY ── */
+  .gal-masonry { columns: 2; column-gap: 12px; }
+  .gal-brick { margin-bottom: 12px; border-radius: 16px; }
+
+  /* ── DEPOIMENTOS ── */
+  .dep-grid { gap: 14px; }
+  .dep-card { padding: 28px 22px; border-radius: 20px; }
+
+  /* ── GALERIA HOME (grid simples) ── */
+  .galeria-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 8px;
+  }
+  .gal-tall  { grid-row: span 1; }
+  .gal-med   { grid-column: span 1; }
+  .gc1, .gc4 { grid-column: auto; grid-row: auto; }
+  .gc5       { grid-column: span 2; }
+
+  /* ── FOOTER ── */
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 0 20px 48px;
+  }
+  .footer-brand { grid-column: 1; }
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 6px;
+    padding: 0 20px 20px;
+  }
+
+  /* ── LIGHTBOX MOBILE ── */
+  .gal-lightbox-img {
+    max-width: 95vw;
+    max-height: 80vh;
+  }
+  .gal-lightbox-prev { left: 10px; }
+  .gal-lightbox-next { right: 10px; }
+  .gal-lightbox-nav { width: 40px; height: 40px; }
 }
 
-/* Telas muito pequenas (< 380px): só reduzir headline se necessário */
+
+/* =============================================
+   BREAKPOINT MUITO PEQUENO (< 380px)
+   Ajustes mínimos — preserva a hierarquia.
+   ============================================= */
 @media (max-width: 380px) {
-  .hero-hl-em    { font-size: 2.6rem; }
-  .hero-hl-plain { font-size: 2.2rem; }
-  .hero-hl-accent { font-size: 1.8rem; }
-  .hero-text-col { padding: 32px 20px 44px; }
+  /* Hero: reduz headline para caber em telas muito estreitas */
+  .hero-hl-em     { font-size: 2.8rem; }
+  .hero-hl-plain  { font-size: 2.35rem; }
+  .hero-hl-accent { font-size: 1.9rem; }
+  .hero-text-col  { padding: 36px 18px 48px; }
+
+  /* Botões: empilham verticalmente em telas < 380px */
+  .btn-hero-primary,
+  .btn-hero-ghost {
+    flex: 1 1 100%; /* força cada botão a ocupar linha própria */
+    min-width: unset;
+  }
+
+  /* Presentes visual: esconde em telas muito pequenas */
   .presentes-visual-col { display: none; }
+
+  /* Biscuit: uma coluna só */
+  .biscuit-grid { grid-template-columns: 1fr; }
+  .biscuit-card:nth-child(5) { display: block; } /* mostra o 5º de volta */
+
+  /* Produto grid: uma coluna */
+  .pcat-grid { grid-template-columns: 1fr !important; }
 }
